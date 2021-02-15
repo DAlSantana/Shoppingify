@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './core/sidebar/sidebar.component';
 import { ProdutoComponent } from './modules/produto/produto.component';
 import { ItensComponent } from './shared/itens/itens.component';
+import { HistoryComponent } from './shared/history/history.component';
+import { StatisticsComponent } from './shared/statistics/statistics.component';
+import { PedidoComponent } from './modules/pedido/pedido.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     ProdutoComponent,
-    ItensComponent
+    ItensComponent,
+    HistoryComponent,
+    StatisticsComponent,
+    PedidoComponent
   ],
   imports: [
     BrowserModule,
