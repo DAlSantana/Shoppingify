@@ -1,9 +1,53 @@
-<section class="main">
+<section class="main mt-1  bg-opacity-0  " style="background-color:#EFF6FF; height: 100rem;">
 <div>
-    <div>
-        <h1>Home</h1>
-        <button (click)="openModal('custom-modal-1')">Open Modal 1</button>
+    <div class="flex flex-row space-l-96">
+        <div>
+            <div class="flex flex-col ml-20 mt-20"  >
+                <div>
+                    <span style="color: #F9A109;" class="font"  >
+                        Shoppingify
+                    </span>
+                     allows you take your 
+                </div>
+                <div>
+                    shopping llist wherever you go
+                </div> 
+             </div>
+        </div>
+        <div class="float-right ml-96 bg-white h-10 mt-20">
+           
+            <div >
+                <i class="material-icons ">
+                    search
+                </i>
+                <input style=" font-size: 20px; text-align: center; color: #BDBDBD;" placeholder="search item"/>
+            </div>
+           
+        </div>
+      </div>
+  
+
+    <div class="mt-20">
+        <div class="font">
+            Fruit and vegetables
+        </div>
+        <div class="grid grid-cols-3 gap-4 mt-10">
+            <div >
+                <button (click)="openModal('custom-modal-1')" class="fruit-component mt-5">Avocado</button>
+            </div>
+            <div  >
+                <button (click)="openModal('custom-modal-1')" class="fruit-component mt-5">Banana</button>
+
+            </div>
+            <div >
+                <button (click)="openModal('custom-modal-1')" class="fruit-component mt-5">Bunch of carrots 5pcs</button>
+            </div>
+          </div>
+        <!-- > -->
     </div>
+
+
+
     <app-produto id="custom-modal-1" class="font">
         <div class="flex justify-start" (click)="closeModal('custom-modal-1');">
             <div>
