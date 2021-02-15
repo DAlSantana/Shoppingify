@@ -1,0 +1,20 @@
+<section class="main">
+<div>
+    <div>
+        <h1>Home</h1>
+        <button (click)="openModal('custom-modal-1')">Open Modal 1</button>
+    </div>
+    <app-produto id="custom-modal-1" class="font">
+        <div class="flex justify-start" (click)="closeModal('custom-modal-1');">
+            <div>
+                <span class="material-icons" style="color: #F9A109;">
+                    keyboard_backspace
+                </span>
+            </div>
+            <div>
+                <button style="color: #F9A109;">back</button>
+            </div>
+          </div>
+    </app-produto>
+</div>
+</section>
