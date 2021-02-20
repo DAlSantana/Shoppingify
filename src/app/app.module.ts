@@ -9,6 +9,7 @@ import { ItensComponent } from './shared/itens/itens.component';
 import { HistoryComponent } from './shared/history/history.component';
 import { StatisticsComponent } from './shared/statistics/statistics.component';
 import { PedidoComponent } from './modules/pedido/pedido.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PedidoComponent } from './modules/pedido/pedido.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
