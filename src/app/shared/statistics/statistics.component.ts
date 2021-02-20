@@ -10,28 +10,40 @@ import { BaseChartDirective, Color, Label } from 'ng2-charts';
 export class StatisticsComponent implements OnInit {
 
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' }
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Quantidade' }
   ];
   public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChartOptions: (ChartOptions & { annotation: any }) = {
+    
+    legend:{
+      display:false
+    },
     responsive: true,
     scales: {
-      // We use this empty structure as a placeholder for dynamic theming.
-      xAxes: [{}],
+      xAxes: [{
+        gridLines:{
+          lineWidth:2,
+          drawBorder:true,
+          borderDash:[5]
+        }
+      }],
       yAxes: [
         {
           id: 'y-axis-0',
           position: 'left',
+          gridLines:{
+            lineWidth:2,
+            drawBorder:true,
+            borderDash:[5]
+          }
         },
-        {
-          id: 'y-axis-1',
-          position: 'right',
-         
-        }
+        
+      
       ]
     },
     annotation: {
       annotations: [
+
         {
           type: 'line',
           mode: 'vertical',
@@ -49,33 +61,16 @@ export class StatisticsComponent implements OnInit {
     },
   };
   public lineChartColors: Color[] = [
-    { // grey
-      backgroundColor: 'rgba(148,159,177,0.2)',
+    { 
+      backgroundColor: 'RGBA(255,255,255,0)',
       borderColor: '#F9A109',
       pointBackgroundColor: '#FFFFFF',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgba(148,159,177,0.8)',
       borderWidth:1,
-      
-      
     },
-    // { // dark grey
-    //   backgroundColor: 'rgba(77,83,96,0.2)',
-    //   borderColor: 'rgba(77,83,96,1)',
-    //   pointBackgroundColor: 'rgba(77,83,96,1)',
-    //   pointBorderColor: '#fff',
-    //   pointHoverBackgroundColor: '#fff',
-    //   pointHoverBorderColor: 'rgba(77,83,96,1)'
-    // },
-    // { // red
-    //   backgroundColor: 'rgba(255,0,0,0.3)',
-    //   borderColor: 'red',
-    //   pointBackgroundColor: 'rgba(148,159,177,1)',
-    //   pointBorderColor: '#fff',
-    //   pointHoverBackgroundColor: '#fff',
-    //   pointHoverBorderColor: 'rgba(148,159,177,0.8)'
-    // }
+
   ];
   public lineChartLegend = true;
   public lineChartType: ChartType = 'line';
