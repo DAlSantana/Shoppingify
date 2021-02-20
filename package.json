@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
     "autoprefixer": "^10.2.4",
+    "chart.js": "^2.9.4",
+    "ng2-charts": "^2.4.2",
     "postcss": "^8.2.6",
     "rxjs": "~6.6.0",
     "tailwindcss": "^2.0.3",

@@ -9,6 +9,7 @@ import { ItensComponent } from './shared/itens/itens.component';
 import { StatisticsComponent } from './shared/statistics/statistics.component';
 import { PedidoComponent } from './modules/pedido/pedido.component';
 import { HistoryModule } from './shared/history/history.module';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HistoryModule } from './shared/history/history.module';
   imports: [
     BrowserModule,
     HistoryModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
