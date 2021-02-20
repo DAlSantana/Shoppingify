@@ -65,10 +65,12 @@ export class StatisticsComponent implements OnInit {
       backgroundColor: 'RGBA(255,255,255,0)',
       borderColor: '#F9A109',
       pointBackgroundColor: '#FFFFFF',
-      pointBorderColor: '#fff',
+      pointBorderColor: '#F9A109',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgba(148,159,177,0.8)',
       borderWidth:1,
+      pointBorderWidth:2,
+      pointStyle:"#F9A109"
     },
 
   ];
