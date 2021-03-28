@@ -1,5 +1,8 @@
+@import '../../../styles/styles.scss';
+
 .alinhamento-box{
-    margin-left: 65em;
+    // margin-left: 65em;
+    margin-left: 100rem;
 }
 .box{
     height: 62rem;
@@ -13,24 +16,19 @@
 
 .fonte-chave{
     color: #C1C1C4;
-   font-family: 'Quicksand', sans-serif;
 }
 
 .fonte-valor{
     color:000000;
-    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-size: 24px;
-
 }
 
 
 .fonte-note{
     color:000000;
-    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-size: 15px;
-
 }
 
 .button-add-list{

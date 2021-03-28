@@ -5,7 +5,7 @@ import { BaseChartDirective, Color, Label } from 'ng2-charts';
 @Component({
   selector: 'app-statistics',
   templateUrl: './statistics.component.html',
-  styleUrls: ['./statistics.component.sass']
+  styleUrls: ['./statistics.component.scss']
 })
 export class StatisticsComponent implements OnInit {
 

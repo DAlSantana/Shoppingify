@@ -17,10 +17,12 @@
         <div class="float-right ml-96 bg-white h-10 mt-20">
            
             <div class="ring-4 ring-gray-200" style="border-radius: 15px;">
-                <i class="material-icons ">
+                <i class="material-icons" >
                     search
                 </i>
-                <input style=" font-size: 26px; color: #BDBDBD; outline: none;" placeholder="search item" class="mr-10"/>
+                
+                <input style=" font-size: 26px; color: #BDBDBD; outline: none; font-size: 20px; padding:10px ;" placeholder="search item" class="mr-3"/>
+                <!-- <input style=" font-size: 26px; color: #BDBDBD; outline: none;" placeholder="search item" class="mr-10"/> -->
             </div>
            
         </div>
@@ -48,7 +50,9 @@
 
 
 
-    <app-produto id="custom-modal-1" class="font">
+<div class="details">
+   
+    <app-produto id="custom-modal-1" class="font"  >
         <div class="flex justify-start" (click)="closeModal('custom-modal-1');">
             <div>
                 <span class="material-icons" style="color: #F9A109;">
@@ -60,5 +64,7 @@
             </div>
           </div>
     </app-produto>
+
+</div>
 </div>
 </section>

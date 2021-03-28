@@ -1,0 +1,30 @@
+@import '../../../styles/styles.scss';
+
+.main{
+  
+  margin-left: 84px;
+  font-size: 28px;
+  padding: 0px 10px;
+
+}
+
+.progress{
+  width: 332px;
+  &__bar__items{
+     width: 30px;
+     background-color: $yellow;
+  }
+  &__bar__category{
+    width: 1000px; 
+    background-color: $blue;
+  }
+}
+
+.font{
+  font-size: 20px;
+}
+.graph{
+  &__table{
+    margin-right: 30rem;
+  }
+}
